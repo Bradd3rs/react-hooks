@@ -8,14 +8,6 @@ function App() {
     {
       text: "Learn about React",
       isCompleted: false
-    },
-    {
-      text: "Meet friend for lunch",
-      isCompleted: false
-    },
-    {
-      text: "Build really cool todo app",
-      isCompleted: false
     }
   ]);
   const addTodo = text => {
@@ -33,8 +25,8 @@ function App() {
     setTodos(newTodos);
   };
   return (
-    <div className="app">
-      <div className="todo-list">
+    <div>
+      <div>
         {todos.map((todo, index) => (
           <Todo
             key={index}
